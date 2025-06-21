@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: Deploy to Railway
-          command: npx @railway/cli up --service=<YOUR_SERVICE_ID_HERE> --ci
+          command: npx @railway/cli up --service=0b808974-cf29-4a5a-a23d-c3f6ca1ea643 --ci
 
 workflows:
   deploy_on_main:

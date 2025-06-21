@@ -1,0 +1,12 @@
+{
+  "name": "circleci-railway-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "echo \"No build step needed\""
+  },
+  "dependencies": {
+    "express": "^4.18.4"
+  }
+}

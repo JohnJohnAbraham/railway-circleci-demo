@@ -1,0 +1,19 @@
+version: 2.1
+
+jobs:
+  deploy:
+    docker:
+      - image: cimg/node:18.20.2
+    steps:
+      - checkout
+      - run:
+          name: Deploy to Railway
+          command: npx @railway/cli up --service=<YOUR_SERVICE_ID_HERE> --ci
+
+workflows:
+  deploy_on_main:
+    jobs:
+      - deploy:
+          filters:
+            branches:
+              only: main
